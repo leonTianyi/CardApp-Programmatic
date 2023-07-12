@@ -11,9 +11,9 @@ class CardSelectionVC: UIViewController {
     
     let cardImageView = UIImageView()
     //Initialize the buttons
-    let stopButton = CardAppButton(backgroundColor: .systemRed, title: "Stop!")
-    let resetButton = CardAppButton(backgroundColor: .init(red: 89/255, green: 133/255, blue: 53/255, alpha: 1), title: "Reset")
-    let rulesButton = CardAppButton(backgroundColor: .systemBlue, title: "Rules")
+    let stopButton = CardAppButton(Color: .systemRed, title: "Stop!", systemImageName: "stop.circle")
+    let resetButton = CardAppButton(Color: .init(red: 89/255, green: 133/255, blue: 53/255, alpha: 1), title: "Reset", systemImageName: "arrow.clockwise.circle")
+    let rulesButton = CardAppButton(Color: .systemBlue, title: "Rules", systemImageName: "list.bullet")
     
     var cards: [UIImage] = CardDeck.allValues
     var timer: Timer!
